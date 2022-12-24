@@ -1,0 +1,312 @@
+@media (max-width: 320px) {
+  .description {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    color: white;
+    text-shadow: 1px 1px 1px #999999;
+    text-align: center;
+  }
+  .container-mainBlock {
+    background-image: url("../img/img320/320main.png");
+    background-size: 320px 540px;
+    width: 100%;
+    height: 540px;
+    display: flex;
+    flex-flow: column;
+    justify-content: _;
+    align-items: _;
+  }
+  .container-mainBlock-header {
+    display: flex;
+    flex-flow: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    color: #FF4E50;
+  }
+  .container-mainCards {
+    width: 100%;
+    height: 781px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .container-mainCards-cards {
+    width: 300px;
+    height: 740px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: _;
+    margin-right: _;
+    margin-top: 2px;
+  }
+  .container-mainCards-cards-step {
+    width: 300px;
+    height: 240px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container-mainCards-cards-step.one {
+    background-image: url("../img/img320/step(1).png");
+    background-size: 300px 240px;
+  }
+  .container-mainCards-cards-step.two {
+    background-image: url("../img/img320/step(2).png");
+    background-size: 300px 240px;
+  }
+  .container-mainCards-cards-step.three {
+    background-image: url("../img/img320/step(3).png");
+    background-size: 300px 240px;
+  }
+  .container-mainCards-cards-step-info {
+    width: _;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: start;
+  }
+  .container-mainProfiles {
+    width: 100%;
+    height: 1048px;
+    margin-left: _;
+    margin-right: _;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .container-mainProfiles-profiles {
+    width: 100%;
+    height: 930px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container-mainIdeas {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .container-mainIdeas-activities {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .container-mainIdeas-activities__img1 {
+    background-image: url("../img/img320/extr320.png");
+    width: 300px;
+    height: 120px;
+  }
+  .container-mainIdeas-activities__img2 {
+    background-image: url("../img/img320/health320.png");
+    width: 300px;
+    height: 120px;
+  }
+  .container-mainIdeas-activities__img3 {
+    background-image: url("../img/img320/travel320.png");
+    width: 300px;
+    height: 120px;
+  }
+  .container-mainIdeas-games {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container-mainIdeas-games__img1 {
+    background-image: url("../img/img320/game320.png");
+    width: 300px;
+    height: 120px;
+  }
+  .container-mainIdeas-games__img2 {
+    background-image: url("../img/img320/culture320.png");
+    width: 300px;
+    height: 120px;
+  }
+  .container-mainIdeas-enjoy {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container-mainIdeas-enjoy__img1 {
+    background-image: url("../img/img320/massage320.png");
+    width: 300px;
+    height: 120px;
+  }
+  .container-mainIdeas-enjoy__img2 {
+    background-image: url("../img/img320/extr320.png");
+    width: 300px;
+    height: 120px;
+  }
+  .container-create {
+    margin-left: _;
+    margin-right: _;
+    margin-top: 20px;
+    width: 100%;
+    height: 190px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  .container-create-info-search {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: _;
+  }
+  .container-footer {
+    width: 100%;
+    height: 204px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: _;
+    margin-right: _;
+    margin-top: 20px;
+  }
+  .container-footer-company {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .container-footer-company-title {
+    width: 100%;
+    height: _;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1440px) {
+  .container {
+    max-width: 768px !important;
+  }
+  .container-mainCards {
+    width: 768px;
+    height: 460px;
+  }
+  .container-mainCards-cards {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .container-mainCards-cards-step.one {
+    background-image: url("../img/img768/card1768.png");
+    width: 236px;
+    height: 400px;
+  }
+  .container-mainCards-cards-step.two {
+    background-image: url("../img/img768/cars.png");
+    width: 236px;
+    height: 400px;
+  }
+  .container-mainCards-cards-step.three {
+    background-image: url("../img/img768/card3768.png");
+    width: 236px;
+    height: 400px;
+  }
+  .container-mainProfiles {
+    width: 492px;
+    height: 605px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: _;
+    margin-left: _;
+    margin-right: _;
+    margin-top: 20px;
+  }
+  .container-mainProfiles-profiles {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: _;
+    width: _;
+    height: 500px;
+  }
+  .container-mainIdeas {
+    width: 768px;
+    height: 1031px;
+  }
+  .container-mainIdeas-activities {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: _;
+  }
+  .container-mainIdeas-activities__img1 {
+    background-image: url("../img/img768/sport768.png");
+    width: 236px;
+    height: 310px;
+  }
+  .container-mainIdeas-activities__img2 {
+    background-image: url("../img/img768/health768.png");
+    width: 236px;
+    height: 310px;
+  }
+  .container-mainIdeas-activities__img3 {
+    background-image: url("../img/img768/extr768.png");
+    width: 236px;
+    height: 310px;
+  }
+  .container-mainIdeas-games {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: _;
+  }
+  .container-mainIdeas-games__img1 {
+    background-image: url("../img/img768/game768.png");
+    width: 236px;
+    height: 310px;
+  }
+  .container-mainIdeas-games__img2 {
+    background-image: url("../img/img768/culture768.png");
+    width: 492px;
+    height: 310px;
+  }
+  .container-mainIdeas-enjoy {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: _;
+  }
+  .container-mainIdeas-enjoy__img1 {
+    background-image: url("../img/img768/massage768.png");
+    width: 492px;
+    height: 310px;
+  }
+  .container-mainIdeas-enjoy__img2 {
+    background-image: url("../img/img768/trave768.png");
+    width: 236px;
+    height: 310px;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */

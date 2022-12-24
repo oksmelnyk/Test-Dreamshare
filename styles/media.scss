@@ -1,0 +1,217 @@
+@import "./common/mixin.scss";
+
+@media(max-width: 320px) {
+
+.description {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  color: white;
+  text-shadow: 1px 1px 1px #999999;
+  text-align: center;
+}
+
+  .container {
+    &-mainBlock {
+      background-image: url("../img/img320/320main.png");
+      background-size: 320px 540px;
+      @include widthHeight(100%,540px);
+      @include displayFlex(flex,column,_,_);
+      &-header {
+        @include displayFlex(flex, column-reverse, space-around, center);
+        color: #FF4E50;
+    }
+    &-mainCards {
+      @include widthHeight(100%, 781px);
+      @include margin(auto, auto, 10px);
+      @include displayFlex(flex,column,flex-start,center);
+      &-cards {
+        @include widthHeight(300px, 740px);
+        @include displayFlex(flex,column,space-between,center);
+        @include margin(_,_,2px);
+        &-step {
+          @include widthHeight(300px,240px);
+          @include displayFlex(flex,column,space-between,center);
+          &.one {
+            background-image: url("../img/img320/step(1).png");
+            background-size: 300px 240px;
+          }
+          &.two {
+            background-image: url("../img/img320/step(2).png");
+            background-size: 300px 240px;
+          }
+          &.three {
+            background-image: url("../img/img320/step(3).png");
+            background-size: 300px 240px;
+          }
+          &-info {
+            @include widthHeight(_,100%);
+            @include displayFlex(flex,column,flex-end,start);
+          }
+        }
+      }
+    }
+    &-mainProfiles {
+      @include widthHeight(100%,1048px);
+      @include margin(_,_,20px);
+      text-align: center;
+      &-profiles {
+        @include widthHeight(100%,930px);
+        @include displayFlex(flex,column,space-between,center);
+      }
+    }
+    &-mainIdeas {
+      @include widthHeight(100%,1000px);
+      @include displayFlex(flex,column,space-evenly,center);
+      text-align: center;
+      margin-top: 30px;
+      &-activities {
+        @include widthHeight(100%,400px);
+        @include displayFlex(flex, column, space-around, center);
+        &__img1 {
+          background-image: url("../img/img320/extr320.png");
+          @include widthHeight(300px, 120px);
+        }
+        &__img2 {
+          background-image: url("../img/img320/health320.png");
+          @include widthHeight(300px, 120px);
+        }
+        &__img3 {
+          background-image: url("../img/img320/travel320.png");
+          @include widthHeight(300px, 120px);
+        }
+      }
+      &-games {
+        @include widthHeight(100%,250px);
+        @include displayFlex(flex, column, space-between, center);
+        &__img1 {
+          background-image: url("../img/img320/game320.png");
+          @include widthHeight(300px, 120px);
+        }
+        &__img2 {
+          background-image: url("../img/img320/culture320.png");
+          @include widthHeight(300px, 120px);
+        }
+      }
+      &-enjoy {
+        @include widthHeight(100%,250px);
+        @include displayFlex(flex, column, space-between, center);
+        &__img1 {
+          background-image: url("../img/img320/massage320.png");
+          @include widthHeight(300px, 120px);
+        }
+        &__img2 {
+          background-image: url("../img/img320/extr320.png");
+          @include widthHeight(300px, 120px);
+        }
+      }
+    }
+    &-create {
+      @include margin(_,_,20px);
+      @include widthHeight(100%,190px);
+      @include displayFlex(flex,column,space-between,center);
+      text-align: center;
+      &-info {
+        &-search {
+          @include displayFlex(flex, column, space-between, center);
+          @include widthHeight(100%, _);
+        }
+      }
+    }
+    &-footer {
+      @include widthHeight(100%, 204px);
+      @include displayFlex(flex, column, space-around, center);
+      @include margin(_, _, 20px);
+      &-company {
+        @include displayFlex(flex, row wrap, space-around, center);
+        &-title {
+          @include widthHeight(100%,_);
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1440px) {
+
+  .container {
+    max-width: 768px !important;
+    &-mainCards {
+      @include widthHeight(768px,460px);
+      &-cards {
+        @include displayFlex(flex, row nowrap, space-evenly, center);
+        &-step {
+          &.one {
+            background-image: url("../img/img768/card1768.png");
+            width: 236px;
+            height: 400px;
+          }
+          &.two {
+            background-image: url("../img/img768/cars.png");
+            width: 236px;
+            height: 400px;
+          }
+          &.three {
+            background-image: url("../img/img768/card3768.png");
+            width: 236px;
+            height: 400px;
+          }
+        }
+      }
+    }
+    &-mainProfiles {
+      @include widthHeight(492px,605px);
+      @include displayFlex(flex, column, space-between, _);
+      @include margin(_,_,20px);
+
+      &-profiles {
+        @include displayFlex(flex, row wrap, space-between, _);
+        @include widthHeight(_,500px);
+      }
+    }
+    &-mainIdeas {
+      @include widthHeight(768px,1031px);
+      &-activities {
+        @include displayFlex(flex, row wrap, space-evenly, _);
+        &__img1 {
+          background-image: url("../img/img768/sport768.png");
+          @include widthHeight(236px, 310px);
+        }
+        &__img2 {
+          background-image: url("../img/img768/health768.png");
+          @include widthHeight(236px, 310px);
+        }
+        &__img3 {
+          background-image: url("../img/img768/extr768.png");
+          @include widthHeight(236px, 310px);
+        }
+      }
+      &-games {
+        @include displayFlex(flex, row wrap, space-evenly, _);
+        &__img1 {
+          background-image: url("../img/img768/game768.png");
+          @include widthHeight(236px, 310px);
+        }
+        &__img2 {
+          background-image: url("../img/img768/culture768.png");
+          @include widthHeight(492px, 310px);
+        }
+      }
+      &-enjoy {
+        @include displayFlex(flex, row wrap, space-evenly, _);
+        &__img1 {
+          background-image: url("../img/img768/massage768.png");
+          @include widthHeight(492px, 310px);
+        }
+        &__img2 {
+          background-image: url("../img/img768/trave768.png");
+          @include widthHeight(236px, 310px);
+        }
+      }
+    }
+  }
+}

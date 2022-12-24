@@ -1,0 +1,316 @@
+@import "./common/mixin.scss";
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat/static/Montserrat-Bold.ttf");
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+.font-classR {
+  font-family: Roboto, serif;
+}
+.font-classM {
+  font-family: Montserrat, serif;
+}
+
+.grey {
+  color: #999999;
+}
+
+.description {
+  @include margin(auto,auto,130px);
+  color: white;
+  text-shadow: 1px 1px 1px #999999;
+  text-align: center;
+}
+.description:hover {
+  color: #FF4E50;
+}
+
+.container {
+  @include widthHeight(1440px, _);
+  @include displayFlex(flex, column, _, _);
+  @include margin(auto, auto, _);
+
+  &-mainBlock {
+    background-image: url("../img/img1440/Background.png");
+    @include widthHeight(100%, 700px);
+    @include displayFlex(flex, column, _, _);
+
+    &-header {
+      @include widthHeight(100%, 100px);
+      @include displayFlex(flex, _, space-around, center);
+      color: white;
+
+      &-right {
+        @include widthHeight(170px, _);
+        @include displayFlex(flex, row nowrap, space-between, _);
+
+        &__LogIn button, &__SignUp button {
+          border-color: transparent;
+          border-radius: 30px !important;
+
+          &:hover {
+            background: transparent;
+            border: 1px solid white;
+            color: white;
+          }
+        }
+      }
+    }
+    &-content {
+      @include widthHeight(_, 500px);
+      @include displayFlex(flex, column nowrap, center, center);
+      color: white;
+      text-align: center;
+
+      &__btn {
+        @include widthHeight(225px, 40px);
+        @include margin(_,_,20px);
+        border-radius: 15px;
+        background-color: #FF4E50;
+        color: white;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+          background-color: transparent;
+          border: 2px solid #FF4E50;
+        }
+      }
+    }
+  }
+  &-mainCards {
+    @include displayFlex(flex, column, center, center);
+    @include widthHeight(940px, 461px);
+    @include margin(auto, auto, 70px);
+
+    &-title {
+      @include widthHeight(100%, 42px);
+      @include displayFlex(flex, row, center, center);
+    }
+
+    &-cards {
+      @include widthHeight(100%,419px);
+      @include displayFlex(flex, row nowrap, space-between, center);
+      margin-top: 30px;
+
+      &-step {
+        @include widthHeight(300px, 400px);
+        @include displayFlex(flex, column, flex-end, _);
+        background-color: black;
+        box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+
+        &:hover {
+          box-shadow: none;
+          transition: 1s;
+        }
+
+        &.one {
+          background-image: url("../img/img1440/Step1image.png");
+        }
+
+        &.two {
+          background-image: url("../img/img1440/Stepimage2.png");
+        }
+
+        &.three {
+          background-image: url("../img/img1440/Step3image.png");
+        }
+
+        &-info {
+          @include displayFlex(flex, column, space-evenly, flex-start);
+          @include widthHeight(_, 55%);
+          padding: 0 10px;
+          text-align: inherit;
+          color: white;
+
+          &__btn {
+            background: #FF4E50;
+            color: white;
+            border-radius: 10px;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+  &-mainProfiles {
+    @include widthHeight(940px, 361px);
+    @include displayFlex(flex, column, space-between, center);
+    @include margin(auto, auto, 70px);
+
+    &-title {
+      @include widthHeight(100%, 32px);
+      @include displayFlex(flex, row, center, center);
+    }
+
+    &-profiles {
+      @include widthHeight(100%, 255px);
+      @include displayFlex(flex, row nowrap, space-between, _);
+
+      &-profOne {
+        @include displayFlex(flex, column, space-between, center);
+        @include widthHeight(221px, 205px);
+
+        &__img {
+          @include widthHeight(120px, 120px);
+          background-image: url("../img/img1440/person1.png");
+        }
+      }
+      &-profTwo {
+        @include displayFlex(flex, column, space-between, center);
+        @include widthHeight(221px, 230px);
+
+        &__img {
+          @include widthHeight(120px, 120px);
+          background-image: url("../img/img1440/person2.png");
+        }
+      }
+      &-profThree {
+        @include displayFlex(flex, column, space-between, center);
+        @include widthHeight(221px, 250px);
+
+        &__img {
+          @include widthHeight(120px, 120px);
+          background-image: url("../img/img1440/person3.png");
+        }
+      }
+      &-profFour {
+        @include displayFlex(flex, column, space-between, center);
+        @include widthHeight(221px, 230px);
+
+        &__img {
+          @include widthHeight(120px, 120px);
+          background-image: url("../img/img1440/person4.png");
+        }
+      }
+    }
+    &__btn {
+      @include widthHeight(180px, 40px);
+      border-radius: 15px;
+      background-color: white;
+      color: #FF4E50;
+      border: 2px solid #FF4E50;
+      cursor: pointer;
+
+      &:hover {
+        background: #FF4E50;
+        color: white;
+        border-radius: 15px;
+      }
+    }
+  }
+  &-mainIdeas {
+    @include widthHeight(940px, 1031px);
+    @include displayFlex(flex, column, space-between, center);
+    @include margin(auto, auto, 70px);
+
+    &-title {
+      @include widthHeight(100%, 32px);
+      @include displayFlex(flex, row, center, center);
+    }
+
+    &-activities {
+      @include displayFlex(flex, row nowrap, space-between, center);
+      @include widthHeight(100%, 310px);
+
+      &__img1 {
+        background-image: url("../img/img1440/sport.png");
+        @include widthHeight(300px, 310px);
+      }
+      &__img2 {
+        background-image: url("../img/img1440/health.png");
+        @include widthHeight(300px, 310px);
+      }
+      &__img3 {
+        background-image: url("../img/img1440/extreme.png");
+        @include widthHeight(300px, 310px);
+      }
+    }
+
+    &-games {
+      @include displayFlex(flex, row nowrap, space-between, center);
+      @include widthHeight(100%, 310px);
+
+      &__img1 {
+        background-image: url("../img/img1440/game.png");
+        @include widthHeight(300px, 310px);
+      }
+      &__img2 {
+        background-image: url("../img/img1440/culture.png");
+        @include widthHeight(620px, 310px);
+      }
+    }
+
+    &-enjoy {
+      @include displayFlex(flex, row nowrap, space-between, center);
+      @include widthHeight(100%, 310px);
+
+      &__img1 {
+        background-image: url("../img/img1440/massage.png");
+        @include widthHeight(620px, 310px);
+      }
+      &__img2 {
+        background-image: url("../img/img1440/travelling.png");
+        @include widthHeight(300px, 310px);
+      }
+    }
+  }
+
+  &-create {
+    @include widthHeight(_, 158px);
+    @include displayFlex(flex, column, space-between, center);
+    @include margin(auto, auto, 70px);
+
+    &-title {
+      @include widthHeight(100%, 32px);
+      @include displayFlex(flex, row, center, center);
+    }
+
+    &-info {
+    @include displayFlex(flex, column, space-between, center);
+
+      &-search {
+        @include displayFlex(flex, row nowrap, space-between, start);
+        @include widthHeight(420px, _);
+      }
+    }
+  }
+
+  &-footer {
+    @include widthHeight(100%, 224px);
+    @include displayFlex(flex, row nowrap, space-around, _);
+    @include margin(_, _, 70px);
+    border-top: 2px solid #FF4E50;
+    padding: 10px 0 0 0;
+
+    &-dreamshare {
+      color: #FF4E50;
+    }
+
+    &-company .link {
+      @include displayFlex(flex, column nowrap, space-around, _);
+    }
+    &-company .link a {
+      text-decoration: none;
+      color: #999999;
+    }
+    &-company .link a:hover {
+      text-decoration: none;
+      color: #FF4E50;
+    }
+
+    &-designed {
+      color: #999999;
+    }
+    &-designed__img {
+      background-image: url("../img/img1440/designed.png");
+      @include widthHeight(110px, 24px);
+      @include margin(_,_,10px);
+    }
+  }
+}

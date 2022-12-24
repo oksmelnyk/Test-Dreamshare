@@ -1,0 +1,17 @@
+@mixin displayFlex ($dis, $flFl, $jusCont, $aliItem) {
+  display: $dis;
+  flex-flow: $flFl;
+  justify-content: $jusCont;
+  align-items: $aliItem;
+}
+
+@mixin widthHeight ($wdth, $hght) {
+  width: $wdth;
+  height: $hght;
+}
+
+@mixin margin ($marLeft, $marRight, $marTop) {
+  margin-left: $marLeft;
+  margin-right: $marRight;
+  margin-top: $marTop;
+}
